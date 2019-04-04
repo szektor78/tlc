@@ -75,7 +75,9 @@
 	.infopage a{color:#01245d;text-decoration:underline}
 	.infopage a:hover{text-decoration:none}
 
-	.date{background:#D0A616/*#E26DB7#22C197*/; width:86px; height:86px; border-radius:50px; float:left; margin:12px 30px 0 0; padding:16px 0 0; color:#f8f8ff; font-size:24px; font-weight:900; text-align:center; line-height:120%;}
+	.date{background:#fc0/*#E26DB7#22C197*/; width:86px; height:86px; border-radius:50px; float:left; margin:12px 30px 0 0; padding:12px 0 0; color:#f8f8ff; font-size:24px; font-weight:900; text-align:center; line-height:120%; text-shadow: 2px 2px 2px #D0A616;
+	box-shadow: inset 2px 2px 2px 0 rgba(208,166,22,.6);
+	}
 	.date span{font-size:14px; text-transform:uppercase; font-weight:400; display:block; color:#f8f8ff;line-height:120%}
 	.ni{font-size:12px;color:#857555;margin:10px;}/*not important*/
 /* HEADER & BASICS */
