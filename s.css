@@ -14,7 +14,7 @@
 	article{width:1080px;float:left;}
 
 	header {
-		background: linear-gradient(to bottom, #002663 0%, #111 100%);/*#459*/
+		background: linear-gradient(to bottom, #002663 0%, #002839 100%);/*#459*/
 		height:40px;
 		border-bottom:3px solid #0090CC;/* #D0A616 */
 		position:fixed;
@@ -48,7 +48,7 @@
 	.nav li.active a{background:#0A182F}
 
 	#srcf{float:right;margin:5px 10px;}
-	#srci{border:0;border-radius:20px;background:#A9AABC;padding:2px 12px 3px;font-size:14px;box-shadow:inset 2px 2px 5px rgba(69,70,85,.3);color:#F8F9FF}
+	#srci{border:0;border-radius:20px;background:#82B6CC/*#A9AABC*/;padding:2px 12px 3px;font-size:14px;box-shadow:inset 2px 2px 5px rgba(0,144,204,.3);/*rgba(69,70,85,.3);*/color:#F8F9FF}
 	#srci::placeholder{color:#F8F9FF;opacity:.5}
 	h1,h2,h3{font-weight:400;font-size:18px;color:#01245d}
 	h3{font-size:16px;margin:16px 10px 12px;}
