@@ -77,14 +77,47 @@ $(function() {
 	}).hover(function(){$(this).addClass("ythover");},function(){$(this).removeClass("ythover");});
 	}
 
-	//webfont loading
-	
+	/*/webfont loading
 	WebFontConfig = {
 		google: {
 			families: ['Open Sans']
 		}
 	};
-	$.getScript("https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js");
+	$.getScript("https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js");*/
+
+	/*var tl = new TimelineLite, 
+    mySplitText = new SplitText("#txteff", {type:"words,chars"}), 
+    chars = mySplitText.chars;
+
+	TweenLite.set("#txteff", {perspective:400});
+	tl.staggerFrom(chars, 0.8, {opacity:0, scale:0, y:80, rotationX:180, transformOrigin:"0% 50% -50",  ease:Back.easeOut}, 0.01, "+=0");
+	tl.restart();*/
+
+	$('h1').css('opacity', '0.69');
+	$('h1').each(function(){//h1 anim.
+		var $t = $(this),
+			rows = $.trim($t.html()).split('<br>');
+		$t.html('');
+		$.each(rows, function(i, val){
+			val=val.replace('&amp;', ' & ');
+			val=val.replace('  ', ' ');
+			val=val.replace('  ', ' ');
+			$('<span class="row"></span>').appendTo($t);
+			var letters = $.trim(val).split('');
+			$.each(letters, function(j, v){
+				v = (v == ' ') ? '&nbsp;' : v;
+				$('<span>' + $.trim(v) + '</span>').appendTo($('.row:last', $t));
+			});
+		});
+	});
+
+	for (i = 0; i < $('h1 span').length; i++) {
+		(function(ind) {
+			setTimeout(function(){
+				$('h1 span:not(".row")').eq(ind).toggleClass('animate');
+			}, ind * 17);
+		})(i);
+	}
 });
 /*$(window).on("load",function(){
 	$('img').each(function(){$(this).attr('src',$(this).attr('lsrc'));});
