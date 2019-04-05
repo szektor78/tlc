@@ -509,7 +509,8 @@
 	}
 	.fb{margin:6px 13px 0;border:medium none #fff;overflow:hidden;height:29px;width:140px}/*w194 h37*/
 	aside > p {color:#a9aabc;font-size:10px;margin:12px 12px}
-	.w184{width:184px;margin:12px 0 12px 10px}
+	.w184{width:184px;margin:12px 0 12px 0}
+	.w184 p{text-align:center}
 /* SIDE */
 
 /* PAGES & PREV/NEXT */
