@@ -74,14 +74,15 @@ $(function() {
 		Webcam.attach('#my_camera');
 
 		$("#getit").hide();
-		function take_snapshot() {
+		$("#snapit").click(function() {
 			Webcam.snap(function(data_uri) {
 				$(".image-tag").val(data_uri);
 				$('#results').html('<img src="'+data_uri+'">');
 				$("#getit").attr('href', data_uri).show();
 			});
-		}
+		});
 	}
+	//https://purge.jsdelivr.net/gh/szektor78/tlc/j.min.js
 
 	//yt video
 	if ($(window).width()>679){

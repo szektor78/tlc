@@ -196,20 +196,20 @@
 /* COMMON IMG LIST */
 
 /* OFFER */
-	.offer{color:#541;text-align:center;margin:10px;padding:20px;background:#fe4;border-radius:10px;/*text-transform:uppercase;*/border-bottom:#fc0 solid 3px;transition: padding .5s;}
-	.offer:after {
+	a p.offer{color:#541;text-align:center;margin:10px;padding:20px;background:#fe4;border-radius:10px;/*text-transform:uppercase;*/border-bottom:#fc0 solid 3px;transition: padding .5s;font-size:16px;}
+	a p.offer:after {
 		transition: margin .5s;
 		font-family: 'tlc';
 		content: "\f105";
 		float: right;
 		color: #541;
 	}
-	.offer:hover {
+	a p.offer:hover {
 		padding:20px 10px 20px 30px;
 		transition: padding .5s;
 	}
 	@media only screen and (max-width: 647px) {
-		.offer {display:none;}
+		a p.offer {display:none;}
 	}
 /* OFFER */
 
