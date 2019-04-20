@@ -195,6 +195,10 @@
 	ul.img-list img{width:340px;height:126px}
 /* COMMON IMG LIST */
 
+/* CAMERA */
+	#results{width:320px;margin:0 0 -20px 10px;}
+	#my_camera{margin:0 0 -14px 10px}
+/* CAMERA */
 /* OFFER */
 	a p.offer{color:#541;text-align:center;margin:10px;padding:20px;background:#fe4;border-radius:10px;/*text-transform:uppercase;*/border-bottom:#fc0 solid 3px;transition: padding .5s;font-size:16px;}
 	a p.offer:after {

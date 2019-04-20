@@ -60,8 +60,8 @@ $(function() {
 	if ($('#my_camera').length>0){//Only on webcam page
 		Webcam.set({
 			// live preview size
-			width: 320,
-			height: 240,
+			width: 426,
+			height: 320,
 
 			// device capture size
 			dest_width: 640,
@@ -77,7 +77,7 @@ $(function() {
 		$("#snapit").click(function() {
 			Webcam.snap(function(data_uri) {
 				$(".image-tag").val(data_uri);
-				$('#results').html('<img src="'+data_uri+'">');
+				$('#results').html('<img src="'+data_uri+'" width=320 height=320>');
 				$("#getit").attr('href', data_uri).show();
 			});
 		});
