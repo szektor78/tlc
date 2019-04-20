@@ -57,6 +57,32 @@ $(function() {
 		});
 	}
 
+	if ($('#my_camera').length>0){//Only on webcam page
+		Webcam.set({
+			// live preview size
+			width: 320,
+			height: 240,
+
+			// device capture size
+			dest_width: 640,
+			dest_height: 480,
+
+			// final cropped size
+			crop_width: 480,
+			crop_height: 480
+		});
+		Webcam.attach('#my_camera');
+
+		$("#getit").hide();
+		function take_snapshot() {
+			Webcam.snap(function(data_uri) {
+				$(".image-tag").val(data_uri);
+				$('#results').html('<img src="'+data_uri+'">');
+				$("#getit").attr('href', data_uri).show();
+			});
+		}
+	}
+
 	//yt video
 	if ($(window).width()>679){
 	$(".yt").each(function() {
@@ -110,7 +136,6 @@ $(function() {
 			});
 		});
 	});
-
 	for (i = 0; i < $('h1 span').length; i++) {
 		(function(ind) {
 			setTimeout(function(){
