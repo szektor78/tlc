@@ -85,7 +85,7 @@ $(function() {
 	}
 
 	function shAd(t){
-		var ads=[],ind=0,adEl=document.getElementById(t);
+		var ads=[],ind=0,$adEl=$('#'+t);
 		if (t=='main') {
 			ads[0]="<a href=https://b2dc5hvouercfka6jdtdz552ym.hop.clickbank.net alt='Visit BioEnergy'><img src=https://cdn.statically.io/img/timelinecovers.pro/images/newaff/bioenergy-300x250.jpg width=300 height=250></a>";
 			ads[1]="<a href=https://641aclylvfp8dw5jszx5qot6t0.hop.clickbank.net alt='Visit Live Chat Jobs'><img src=https://cdn.statically.io/img/timelinecovers.pro/images/newaff/livechatjobs300x250.jpg width=300 height=250></a>";
@@ -95,12 +95,12 @@ $(function() {
 			//ads[]="<a href= alt='Visit '><img src=https://cdn.statically.io/img/timelinecovers.pro/images/newaff/ width=300 height=250></a>";
 		}
 		if (t=='side') {
-			ads[0]="<a href=https://b2dc5hvouercfka6jdtdz552ym.hop.clickbank.net alt='Visit BioEnergy'><img src=https://cdn.statically.io/img/timelinecovers.pro/images/newaff/bioenergy-160x600.jpg width=160 height=600></a>";
-			ads[1]="<a href=https://e1b777nm47nh5n82peg0icsw9p.hop.clickbank.net alt='Visit PhotoJobz'><img src=https://cdn.statically.io/img/timelinecovers.pro/images/newaff/nature-landscape-photojobz-side.jpg width=160 height=600></a>";
-			//ads[]="<a href= alt='Visit '><img src=https://cdn.statically.io/img/timelinecovers.pro/images/newaff/ width=160 height=600></a>";			
+			ads[0]="<a href=https://b2dc5hvouercfka6jdtdz552ym.hop.clickbank.net alt='Visit BioEnergy'><img src=https://cdn.statically.io/img/timelinecovers.pro/images/newaff/bioenergy-160x600.jpg width=160 height=600 loading=lazy></a>";
+			ads[1]="<a href=https://e1b777nm47nh5n82peg0icsw9p.hop.clickbank.net alt='Visit PhotoJobz'><img src=https://cdn.statically.io/img/timelinecovers.pro/images/newaff/nature-landscape-photojobz-side.jpg width=160 height=600 loading=lazy></a>";
+			//ads[]="<a href= alt='Visit '><img src=https://cdn.statically.io/img/timelinecovers.pro/images/newaff/ width=160 height=600 loading=lazy></a>";			
 		}
 		ind = Math.floor(Math.random()*ads.length);
-		if (adEl.length>0) adEl.innerHTML = ads[ind];
+		if ($adEl.length>0) $adEl.innerHTML = ads[ind];
 	}
 	shAd('main');
 	shAd('side');
